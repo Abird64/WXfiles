@@ -1,0 +1,5 @@
+*.exe
+dist/
+node_modules/
+*.log
+.cache/

@@ -1,0 +1,32 @@
+{
+  "name": "wechat-file-manager",
+  "version": "1.0.0",
+  "description": "微信电脑版文件管理器",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "^20.0.0",
+    "electron-builder": "^23.0.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "build": {
+    "appId": "com.wechatfilemanager.app",
+    "productName": "微信文件管理器",
+    "win": {
+      "target": ["nsis", "portable"],
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "icon": "build/icon.icns"
+    },
+    "linux": {
+      "icon": "build/icon.png"
+    }
+  }
+}
